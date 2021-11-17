@@ -20,12 +20,9 @@ TR1             = infoFirst.RepetitionTime;
 FA2nom          = infoFirst.FlipAngle;
 TR2             = infoFirst.RepetitionTime;
 
-
 group_lowflip  = greLow (:,:,1:15);
 group_highflip = greHigh(:,:,1:15);
 group_flipmap  = flipmap(:,:,1:15);
-
-
 
 ratio = zeros(size(group_lowflip));%verhaltnis zwischen S1 und S2;
 ratio(:,:,:) = group_lowflip./group_highflip;
